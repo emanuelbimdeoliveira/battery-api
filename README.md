@@ -28,7 +28,7 @@ This project represents a refactor and evolution of an older implementation, reb
 
 ---
 
-## 📁 Project Architecture
+## 🧱 Project Architecture
 
 The project is fully modular and follows a clear separation of concerns:
 
@@ -40,6 +40,36 @@ The project is fully modular and follows a clear separation of concerns:
 - **Theme Controller** – Handles UI theme switching
 
 Each module has a single responsibility, making the project easier to read, maintain and extend.
+
+## 📁 Folders Architecture
+
+```text
+battery-api
+│   core.md
+│   index.html
+│   index.js
+│   style.css
+└───src
+    ├───api
+    │       battery.api.js
+    ├───controllers
+    │       battery.controller.js
+    │       theme.controller.js
+    ├───display
+    │       battery.updateScreen.js
+    ├───engine
+    │       battery.engine.js
+    ├───events
+    │       events.js
+    ├───formaters
+    │       formaters.js
+    ├───state
+    │       battery.state.js
+    │       theme.state.js
+    │       update.state.js
+    └───updaters
+            battery.updaters.js
+```
 
 ---
 
